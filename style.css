@@ -480,6 +480,41 @@ height:26px;
    RSVP
 ========================================= */
 
+.rsvp-decor{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:16px;
+margin-bottom:28px;
+}
+
+.rsvp-decor span{
+font-size:22px;
+color:var(--rose);
+opacity:0.7;
+animation:sparkle 2.8s ease-in-out infinite;
+}
+
+.rsvp-decor span:nth-child(2){
+animation-delay:0.5s;
+font-size:18px;
+}
+
+.rsvp-decor span:nth-child(3){
+animation-delay:1s;
+}
+
+@keyframes sparkle{
+0%,100%{
+opacity:0.4;
+transform:translateY(0) scale(1);
+}
+50%{
+opacity:1;
+transform:translateY(-3px) scale(1.15);
+}
+}
+
 .rsvp-section{
 position:relative;
 
